@@ -1,15 +1,39 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> para </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body> 
+<section>
+    <img src="img/sky.jpeg" id="sky">
+    <img src="img/moon.png" id="moon">
+    <img src="img/mountain.png" id="mountain">
+    <img src="img/road.png" id="road">
 
+<h2 id="text">Moon Light</h2>
 
+</section>
+    
+    <!-- <p>Scroll Up and Down this page to see the parallax scrolling effect.
+scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</p> -->
+<script text="text/javascript">
+let sky = document.getElementById("sky");
+let moon = document.getElementById("moon");
+let mountain = document.getElementById("mountain");
+let road = document.getElementById("road");
+let text = document.getElementById("text");
+window.addEventListener('scroll,' function(){
+let value = window.scrollY;
+sky.style.top = value + 'px';
+})
 
-
-
-<div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
-
-
-
-<script>
-
-$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 </script>
+    </body>
+    </html>
+    
