@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body> 
+
 <section>
     <img src="img/sky.jpeg" id="sky">
     <img src="img/moon.png" id="moon">
@@ -41,6 +42,20 @@ road.style.top = value * 0.5 + 'px';
 text.style.top = value * 1 + 'px';
 });
 </script>
+<script src="js/jquery-1.11.2.min.js"></script>
+      <script src="js/animsition/jquery.animsition.min.js"></script>
+      <script src="js/sticky/jquery.sticky.js"></script>
+      <script src="js/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+      $('.slides').slick({
+       fade: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true
+      });
+      </script>
     </body>
     </html>
     
