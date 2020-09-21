@@ -10,14 +10,17 @@
   <body> 
 
 <section>
-    <img src="img/sky.jpeg" id="sky">
+    <img src="img/back.png" id="back">
+    <img src="img/stars.png" id="stars">
     <img src="img/moon.png" id="moon">
-    <img src="img/mountain.png" id="mountain">
-    <img src="img/road.png" id="road">
-  <h2 id="text">Moon Light</h2>
+    <img src="img/last.png" id="last">
+    <img src="img/be.png" id="be">
+    <img src="img/tree.png" id="tree">
+    <img src="img/front.png" id="front">
+   <h2 id="text">Noble Bout</h2>
 </section>
 <h1>
-  Moon light <br> dfhasodfhso f eofhewohfheifheifofjsdkfj  hfjdsfkh.
+  Noble Bout <br> dfhasodfhso f eofhewohfheifheifofjsdkfj  hfjdsfkh.
 </h1>
 <p>
   hfihfihihjj hoih  hfosdihfoais f fihoasdihfo s hifoasdif o h fodhsoaihfuirhfjakv vhuribv s. hh
@@ -27,35 +30,27 @@
 </p>
  
 <script type="text/javascript">
-let sky = document.getElementById("sky");
-let moon = document.getElementById("moon");
-let mountain = document.getElementById("mountain");
-let road = document.getElementById("road");
+let back = document.getElementById("back");
+let last = document.getElementById("last");
+let tree = document.getElementById("tree");
 let text = document.getElementById("text");
+let be = document.getElementById("be");
+let front = document.getElementById("front");
+let moon = document.getElementById("moon");
+
 
 window.addEventListener('scroll', function(e){
 var value = window.pageYOffset;
-sky.style.top = value * 0.5 + 'px';
-moon.style.left = -value * 0.5 + 'px';
-mountain.style.top = -value * 0.15 + 'px';
-road.style.top = value * 0.5 + 'px';
-text.style.top = value * 1 + 'px';
+back.style.bottom = value * 0.5 + 'px';
+moon.style.left= -value * 0.5 + 'px';
+last.style.top= value * 1 + 'px';
+be.style.bottom = value * 0.5 + 'px';
+tree.style.bottom = value * 1 + 'px';
+front.style.bottom = -value * 0.5 + 'px';
+text.style.top = value * 0.5 + 'px';
+
 });
 </script>
-<script src="js/jquery-1.11.2.min.js"></script>
-      <script src="js/animsition/jquery.animsition.min.js"></script>
-      <script src="js/sticky/jquery.sticky.js"></script>
-      <script src="js/slick/slick.min.js"></script>
-      <script src="js/main.js"></script>
-      <script>
-      $('.slides').slick({
-       fade: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: true
-      });
-      </script>
     </body>
     </html>
     
