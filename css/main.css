@@ -62,10 +62,29 @@ z-index: 1;
 #tree{
 z-index: 2; 
 }
-h1{
+h1,p{
 color: #fff;
 }
-.navigation {
+
+
+.topnav {
+    background-color: #afd1eb;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+
+/* .navigation {
     width: 100%;
     background: black;
     min-height: 30px;
@@ -96,4 +115,4 @@ color: #fff;
   .nav a:hover {
     color: white
   }
-  
+   */
