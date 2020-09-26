@@ -1,9 +1,149 @@
 
 *{
-margin: 0;
-padding: 0;
-font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+body{
+
+ background: #110e1a;
+  min-height: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 125rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 25;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
+}
+
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: rgb(22, 6, 3);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo span{
+  font-weight: 300;
+}
+
+.hamburger-menu{
+  width: 1.55rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar{
+  position: relative;
+  width: 1.2rem; 
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.bar:before, .bar:after{
+  content: '';
+  position: absolute;
+  width: 1.55rem;
+  height: 3px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.bar:before{
+  transform: translateY(-8px);
+}
+
+.bar:after{
+  transform: translateY(8px);
+}
+
+
+section{
+  width: 100%;
+  position: relative;
+}
+
+section .container{
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+section .container > *{
+  margin: 2rem;
+}
+
+.content{
+  color: rgb(216, 192, 115);
+  transform: translateY(-50px);
+}
+
+.imgContainer{
+  transform: translateY(50px);
+}
+
+.title{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  position: relative;
+}
+
+@media (max-width: 850px){
+  section .container{
+      grid-template-columns: 1fr;
+  }
+}
+
+  .text{
+      font-size: .8rem;
+  }
+
 html{
 font-weight: 300;
  font-style: normal;
@@ -11,10 +151,7 @@ text-align: center;
  font-size: 20px;
 
 }
-body{
-background: #0a2a43;
-min-height: 15000px;
-}
+
 section{
 position: relative;
 width: 100%;
@@ -30,7 +167,7 @@ position: absolute;
 bottom: 0;
 width: 100%;
 height: 100px;
-background: linear-gradient(to top,#0a2a43, transparent);
+background: linear-gradient(to top,#0d0b1d, transparent);
 z-index: 100000; 
 }
 section:after{
@@ -40,7 +177,7 @@ section:after{
     left: 0;
     width: 100%;
     height: 100%;
-    background:#0a2a43;
+    /* background:#0a2a43; */
     z-index: 100000; 
     mix-blend-mode: color;
     }
@@ -63,56 +200,48 @@ z-index: 1;
 z-index: 2; 
 }
 h1,p{
-color: #fff;
+color: rgb(248, 246, 219);
+}
+
+.donate-link {
+  width: 20em;
+  margin: auto;
+}
+
+.donate-image {
+  margin: auto;
+  width: 20em;
+  padding: 1em;
+}
+
+.btn-paypal {
+  background: transparent;
+  border: 2px solid #8224E3;
+  border-radius: 3px;
+  color: #8224E3;
+  font-weight: bold;
+  padding: 0.3m 0em;
+  margin: auto;
+  display: block;
+  width: 60%;
+  text-decoration: none;
+  font-size:1.3em;
+  text-align: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-paypal:hover {
+  background-color: #8224E3;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-paypal > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.5em 0;
 }
 
 
-.topnav {
-    background-color: #afd1eb;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
 
-
-/* .navigation {
-    width: 100%;
-    background: black;
-    min-height: 30px;
-    padding: 10px;
-    position: fixed;
-    text-align: center;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
-  }
-  .nav li {
-    padding: 5px 10px 10px 10px;
-  }
-  .nav a {
-    transition: all .5s;
-  }
-  .nav a:hover {
-    color: white
-  }
-   */
