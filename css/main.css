@@ -70,6 +70,8 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient( #2D142c)
+  
   }
 .intro{
   margin-top: 2em;
@@ -83,9 +85,9 @@ section{
 .main .container{
   padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly; 
   min-height: 100vh;
   }
 .main .container > *
@@ -121,7 +123,11 @@ header:after{
 }
 
 .content{
-  color: rgb(216, 192, 115);
+  color: rgb(26, 24, 19);
+  background: #c72c41; 
+  border-radius: .8em;
+  box-shadow: 0 0 0 .4em #510a32;
+  outline: .8em solid #510a32;
   transform: translateY(-50px);
 }
 
@@ -139,7 +145,7 @@ header:after{
 
 @media (max-width: 850px){
   section .container{
-      grid-template-columns: 1fr;
+      grid-template-columns: 3fr;
   }
 }
 
