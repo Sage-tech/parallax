@@ -11,8 +11,9 @@ html{
   font-size: 20px;
   }
 body{
+  margin: 0;
   background: #0e0a1d;
-  min-height: 150px;
+  min-height: 1500px;
   font-family: 'Poppins', sans-serif;
 }
 header{
@@ -63,6 +64,7 @@ nav .container{
   border-radius: 2px;
 }
 section{
+  margin: auto;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -83,18 +85,24 @@ section{
   margin-top: 150px;
   }
 .main .container{
+  margin: auto;
   padding: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  /* align-items: center;
-  align-content: space-evenly;     */
+  align-items: center;
+  align-content: space-evenly;    
   justify-content: center;
-  min-height: 100vh;
+  min-height: 75vh;
+  
+
   }
 .main .container > *
 {
-  margin: 2rem;
+  margin: auto;
   }
+
+
+
 /* pseudo */
 
 header:after{
@@ -124,11 +132,11 @@ header:after{
 }
 
 .content{
+  margin: auto;
   color: rgb(26, 24, 19);
   background: #c72c41; 
   border-radius: .8em;
   box-shadow: 0 0 0 .4em #510a32;
-  outline: .8em solid #510a32;
   transform: translateY(-50px);
 }
 
